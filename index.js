@@ -9,7 +9,9 @@ import userRoute from "./route/user.route.js";
 import Contactus from "./route/Contactus.js";
 const app = express();
 
-app.use(cors());
+app.use(cors({
+  origin: 'https://bookstoreapi-frontend22.onrender.com'
+}));
 app.use(express.json());
 
 dotenv.config();
