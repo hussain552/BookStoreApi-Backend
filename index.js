@@ -10,7 +10,9 @@ import Contactus from "./route/Contactus.js";
 const app = express();
 
 app.use(cors({
-  origin: 'https://bookstoreapi-frontend22.onrender.com'
+  origin: 'https://bookstoreapi-frontend22.onrender.com',
+  
+  
 }));
 app.use(express.json());
 
